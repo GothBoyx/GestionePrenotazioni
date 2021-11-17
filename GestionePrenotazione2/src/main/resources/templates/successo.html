@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Riepilogo prenotazione</title>
+<style>
+body {
+	background-image: linear-gradient(to right, #002e2e, #005757);
+}
+div{
+  padding-left: 50px;  
+  background-color: #c1d6c2;  
+}
+</style>
+</head>
+<body>
+	<div
+		style="font-family: Garamond; font-size: 25px; color: #BF0000; text-align: center; text-shadow: 0.1em 0.1em 0.15em #e0ffff"
+		th:text="'Id : ' + ${pre.id}"
+		th:text="'Username : ' + ${pre.user.username}"
+		th:text="'Codice Postazione : ' + ${pre.postazione.codice}"
+		th:text="'Data : ' + ${pre.dataPrenotata}">
+	</div>
+		
+		
+
+</body>
+</html>

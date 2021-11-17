@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Crea Prenotazione</title>
+<style>
+body {
+	background-image: linear-gradient(to right, #002e2e, #005757);
+}
+div{
+  padding-left: 50px;  
+  background-color: #c1d6c2;  
+}
+</style>
+</head>
+<body>
+<div
+style="font-family: Garamond; font-size: 40px; color: #BF0000; text-align: center; text-shadow: 0.1em 0.1em 0.15em #e0ffff">
+<b>Crea Prenotazione: </b>
+</div>
+<div
+style="font-family: Garamond; font-size: 25px; color: #BF0000; text-align: center;">
+<form action="/prenotazionecontroller/creaprenotazione" method="get">
+  <label for="idUser">User Id:</label>
+  <input type="text" id="idUser" name="idUser"><br>
+  <label for="idPostazione">Postazione Id:</label>
+  <input type="text" id="idPostazione" name="idPostazione"><br>
+  <label for="data_prenotata">Data da prenotare:</label>
+<input type="date" id="start" name="data_prenotata"
+       value="2021-10-29"
+       min="2021-10-29" max="2050-12-31">
+   <input type="submit" value="Submit"/>
+</form>
+</div>
+</body>
+</html>
